@@ -46,7 +46,7 @@ public class JwtTokenProvider {
                 .setSubject(id)
                 // 현재는 ROLE_USER만 가져옴
                 .claim(AUTHORITIES_KEY, Authority.ROLE_USER.name())
-                .claim("aaaaaaa", "bbbbb")  // test로 함 만들어봤수다~
+//                .claim("aaaaaaa", "bbbbb")  // test로 함 만들어봤수다~
                 .signWith(SignatureAlgorithm.HS256, jwtSecretKey)
                 .compact();
 

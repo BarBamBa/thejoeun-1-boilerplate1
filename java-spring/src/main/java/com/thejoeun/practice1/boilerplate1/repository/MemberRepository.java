@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
-@Mapper
 public interface MemberRepository extends JpaRepository<Member, Long> {
     Optional<Member> findByEmail(String email);
     boolean existsByEmail(String email);
