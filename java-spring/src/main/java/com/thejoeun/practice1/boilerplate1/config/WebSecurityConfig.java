@@ -52,7 +52,9 @@ public class WebSecurityConfig {
 
     /**
      * desc: spring security 설정 부분
-     * 참고 공식url: https://docs.spring.io/spring-security/reference/servlet/integrations/mvc.html
+     * 참고 공식url1: https://docs.spring.io/spring-security/reference/servlet/integrations/mvc.html
+     * 참고 공식url2: https://velog.io/@heelieben/Google-Oauth2-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8React-Spring
+     * 참고 공식url3: https://hoestory.tistory.com/m/32
      * @param http
      * @param introspector
      * @return
@@ -84,11 +86,11 @@ public class WebSecurityConfig {
             .requestMatchers(mvcMatcherBuilder.pattern("/api/auth/**")).permitAll()
 //            .requestMatchers(AntPathRequestMatcher.antMatcher("/auth2/**")).permitAll()
             .anyRequest().authenticated()
-            .and()
-            .oauth2Login()
-            .successHandler(customAuth2SuccessHandler())
-            .userInfoEndpoint() // OAuth 2.0 Provider로부터 사용자 정보를 가져오는 엔드포인트를 지정하는 메서드
-            .userService(oAuth2CustomUserService)   // OAuth 2.0 인증이 처리되는데 사용될 사용자 서비스를 지정하는 메서드
+//            .and()
+//            .oauth2Login()
+//            .successHandler(customAuth2SuccessHandler())
+//            .userInfoEndpoint() // OAuth 2.0 Provider로부터 사용자 정보를 가져오는 엔드포인트를 지정하는 메서드
+//            .userService(oAuth2CustomUserService)   // OAuth 2.0 인증이 처리되는데 사용될 사용자 서비스를 지정하는 메서드
         ;
         http.apply(new JwtSecurityConfig(jwtTokenProvider));
 

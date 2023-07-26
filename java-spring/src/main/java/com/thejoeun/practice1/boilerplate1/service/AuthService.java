@@ -33,8 +33,10 @@ public class AuthService {
 
     // 참고url: https://velog.io/@tmdgh0221/Spring-Security-%EC%99%80-OAuth-2.0-%EC%99%80-JWT-%EC%9D%98-%EC%BD%9C%EB%9D%BC%EB%B3%B4
     public JwtTokenDto login(MemberRequestDto requestDto) {
+//        UsernamePasswordAuthenticationToken usernamePasswordAuthenticationTokenReal = requestDto.toAuthentication();
         UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken
-                = requestDto.toAuthentication();
+                = new UsernamePasswordAuthenticationToken(requestDto.getEmail(), requestDto.getPassword());
+        // 계정정보를 비교하기 전 시큐리티 사용자 정보(principal)를 세팅(loadUserByUsername 메소드 호출)하고 그 이후 UsernamePasswordAuthenticationToken을 사용하여 이메일과 패스워드가 같은지 비교
         Authentication authentication = managerBuilder.getObject().authenticate(usernamePasswordAuthenticationToken);
         JwtTokenDto jwtTokenDto = jwtTokenProvider.generateTokenDto(authentication);
 

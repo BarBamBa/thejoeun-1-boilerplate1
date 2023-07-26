@@ -27,6 +27,13 @@ public class MemberRequestDto {
                 .build();
     }
 
+    public MemberResponseDto toMemberResponseDto(MemberRequestDto memberRequestDto) {
+        return MemberResponseDto.builder()
+                .email(email)
+                .nickname(nickname)
+                .build();
+    }
+
     public UsernamePasswordAuthenticationToken toAuthentication() {
         return new UsernamePasswordAuthenticationToken(email, password);
     }
