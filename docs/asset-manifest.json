@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/thejoeun-1-boilerplate1/static/css/main.30ea52ad.css",
+    "main.js": "/thejoeun-1-boilerplate1/static/js/main.fe402f4e.js",
+    "static/js/787.fade2e9e.chunk.js": "/thejoeun-1-boilerplate1/static/js/787.fade2e9e.chunk.js",
+    "index.html": "/thejoeun-1-boilerplate1/index.html",
+    "main.30ea52ad.css.map": "/thejoeun-1-boilerplate1/static/css/main.30ea52ad.css.map",
+    "main.fe402f4e.js.map": "/thejoeun-1-boilerplate1/static/js/main.fe402f4e.js.map",
+    "787.fade2e9e.chunk.js.map": "/thejoeun-1-boilerplate1/static/js/787.fade2e9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30ea52ad.css",
+    "static/js/main.fe402f4e.js"
+  ]
+}
