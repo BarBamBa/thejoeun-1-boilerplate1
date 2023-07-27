@@ -19,9 +19,14 @@ function LoginForm() {
                                     <label className="form-label text-white">Password</label>
                                     <input type="password" className="form-control" name="password" />
                                 </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-primary">로그인</button>
                             </form>
-                            <button type="button" className="btn btn-secondary mt-3" onclick="location.href='/signup'">회원가입</button>
+                            <br />
+                            <div>
+                                <a href="http://localhost:8090/oauth2/authorization/google">
+                                    <img src="/thejoeun1-boilerplate1/img/google3.png" alt="google" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
