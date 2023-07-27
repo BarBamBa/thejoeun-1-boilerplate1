@@ -15,7 +15,7 @@ function MainNavigation () {
           </button>
           <div className='collapse navbar-collapse justify-content-between' id='navbarSupportedContent'>
             <ul className='navbar-nav'>
-              <li className='nav-item'><Link to='/' className='nav-link'>Home</Link></li>
+              <li className='nav-item'><Link to='/' className='nav-link'>Home!!!</Link></li>
               <li className='nav-item'><Link to='/about' className='nav-link'>About</Link></li>
             </ul>
             <ul className='navbar-nav'>
