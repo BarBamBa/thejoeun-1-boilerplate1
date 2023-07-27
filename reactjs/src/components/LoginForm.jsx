@@ -24,7 +24,7 @@ function LoginForm() {
                             <br />
                             <div>
                                 <a href="http://localhost:8090/oauth2/authorization/google">
-                                    <img src="/thejoeun1-boilerplate1/img/google3.png" alt="google" />
+                                    <img src="/thejoeun-1-boilerplate1/img/google3.png" alt="google" />
                                 </a>
                             </div>
                         </div>
