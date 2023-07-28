@@ -7,7 +7,7 @@ import SignUpPage from './pages/SignUpPage'
 import Layout from './layout/Layout'
 
 function App() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <Layout>
       <Routes>

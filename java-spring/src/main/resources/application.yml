@@ -1,4 +1,4 @@
-server.port: 8080 # tomcat서버 포트 8091으로 설정
+server.port: 8091 # tomcat서버 포트 8091으로 설정
 
 spring:
   security:
@@ -17,7 +17,8 @@ spring:
       name: user
       password: 1234
   datasource:
-    url: jdbc:mariadb://ec2-13-124-97-93.ap-northeast-2.compute.amazonaws.com/mydb         # mariadb
+#    url: jdbc:mariadb://ec2-3-34-177-39.ap-northeast-2.compute.amazonaws.com/mydb         # mariadb
+    url: jdbc:mariadb://localhost:3306/mydb         # mariadb
     driver-class-name: org.mariadb.jdbc.Driver
     username: root
     password: 1234
